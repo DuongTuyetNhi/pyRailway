@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jul 15 15:14:57 ICT 2024","Mon Jul 15 15:15:11 ICT 2024","13719","","test_login_page","TestLogin","","","test_login_in_with_inactive_account",""
+"passed","Mon Jul 15 15:13:26 ICT 2024","Mon Jul 15 15:14:16 ICT 2024","49763","","test_login_page","TestLogin","","","test_login_with_blank_username",""
+"passed","Mon Jul 15 15:14:24 ICT 2024","Mon Jul 15 15:14:29 ICT 2024","5510","","test_login_page","TestLogin","","","test_login_with_valid_account",""
+"failed","Thu Jul 11 17:13:39 ICT 2024","Thu Jul 11 17:14:39 ICT 2024","59975","","test_forgot_password_page","TestForgotPassword","","","test_reset_password_same_old_password",""
+"failed","Mon Jul 15 15:14:46 ICT 2024","Mon Jul 15 15:14:53 ICT 2024","7194","","test_login_page","TestLogin","","","test_login_in_several_times",""
+"failed","Mon Jul 15 15:14:37 ICT 2024","Mon Jul 15 15:14:42 ICT 2024","4658","","test_login_page","TestLogin","","","test_login_with_invalid_password",""
+"passed","Mon Jul 15 15:10:08 ICT 2024","Mon Jul 15 15:10:15 ICT 2024","6560","","test_logout","TestLogout","","","test_logout",""

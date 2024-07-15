@@ -23,24 +23,24 @@ class DriverManagement:
         self.remoteUrl = config.get('DEFAULT', 'remoteUrl')
         self.driver = None
 
-    def init_driver(self):
-        if self.runMode.lower() == 'local':
-            if self.browser.lower() == 'chrome':
+    def init_driver(self, runMode, browser):
+        if runMode.lower() == 'local':
+            if browser.lower() == 'chrome':
                 self.driver = webdriver.Chrome(service=ChromeService())
-            elif self.browser.lower() == 'firefox':
+            elif browser.lower() == 'firefox':
                 self.driver = webdriver.Firefox(service=FirefoxService())
             else:
                 self.driver = webdriver.Chrome(service=ChromeService())
-        elif self.runMode.lower() == 'grid':
-            if self.browser.lower() == 'chrome':
+        elif runMode.lower() == 'grid':
+            if browser.lower() == 'chrome':
                 chrome_options = ChromeOptions()
-                self.driver = RemoteWebDriver(command_executor=self.remoteUrl, options=chrome_options)
-            elif self.browser.lower() == 'firefox':
+                self.driver = webdriver.Remote(command_executor=self.remoteUrl, options=chrome_options)
+            elif browser.lower() == 'firefox':
                 firefox_options = FirefoxOptions()
-                self.driver = RemoteWebDriver(command_executor=self.remoteUrl, options=firefox_options)
+                self.driver = webdriver.Remote(command_executor=self.remoteUrl, options=firefox_options)
             else:
                 chrome_options = ChromeOptions()
-                self.driver = RemoteWebDriver(command_executor=self.remoteUrl, options=chrome_options)
+                self.driver = webdriver.Remote(command_executor=self.remoteUrl, options=chrome_options)
 
     def get_driver(self):
         return self.driver

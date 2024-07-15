@@ -1,0 +1,1 @@
+[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":12,"buildName":"PySafeRailway #12","buildUrl":"http://localhost:8080/job/PySafeRailway/12/","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/PySafeRailway/12/allure"}]
